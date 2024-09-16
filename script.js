@@ -1,0 +1,32 @@
+const header = document.querySelector("header");
+window.addEventListener("scroll",function(){
+    header.classList.toggle("sticky", window.scrollY > 0);
+});
+
+function myFunction(){
+    var x = document.getElementById("myInput");
+    var y = document.getElementById("hide1");
+    var z = document.getElementById("hide2");
+    if(x.type === 'password'){
+        x.type = "text";
+        y.style.display = "block";
+        z.style.display = "none";
+    } else {
+        x.type = "password";
+        y.style.display = "none";
+        z.style.display = "block";
+    }
+}
+
+const sign_in_btn = document.querySelector("#sign-in-btn");
+const sign_up_btn = document.querySelector("#sign-up-btn");
+const container = document.querySelector(".container");
+
+sign_up_btn.addEventListener("click", () => {
+  container.classList.add("sign-up-mode");
+});
+
+sign_in_btn.addEventListener("click", () => {
+  container.classList.remove("sign-up-mode");
+});
+

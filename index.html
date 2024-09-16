@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Information</title>
+        <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+        
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h3 class="logo"> Purrfect Website</h3>
+        </header>
+        <div class="container">
+            <div class="forms-container">
+              <div class="signin-signup">
+                <form action="#" class="sign-in-form">
+                  <h2 class="title">Sign in</h2>
+                  <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" />
+                  </div>
+                  <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" id="myInput"/>
+                    <span class="eye" onclick="myFunction()">
+                    <i id="hide1" class="fa-solid fa-eye"></i>
+                    <i id="hide2" class="fa-solid fa-eye-slash hide"></i>
+                </span>
+                  </div>
+                  <input type="submit" value="Login" class="btn solid"/>
+                  <p class="social-text">Or Sign in with social platforms</p>
+                  <div class="social-media">
+                    <a href="#" class="social-icon">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </form>
+                <form action="#" class="sign-up-form">
+                  <h2 class="title">Sign up</h2>
+                  <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" />
+                  </div>
+                  <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email" />
+                  </div>
+                  <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password"/>
+                    
+                  </div>
+                  <input type="submit" class="btn" value="Sign up" />
+                  <p class="social-text">Or Sign up with social platforms</p>
+                  <div class="social-media">
+                    <a href="#" class="social-icon">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="panels-container">
+              <div class="panel left-panel">
+                <div class="content">
+                  <h3>New to Purrfect Website?</h3>
+                  <p>
+                    Enter your details and start your purrfect journey with us!
+                  </p>
+                  <button class="btn transparent" id="sign-up-btn">
+                    Sign up
+                  </button>
+                </div>
+                </div>
+                <div class="panel right-panel">
+                    <div class="content">
+                      <h3>Already have an account?</h3>
+                      <p>
+                        To keep connected with us please login with your personal info
+                      </p>
+                      <button class="btn transparent" id="sign-in-btn">
+                        Sign in
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             <script src="script.js"></script>
+    </body>
+</html>
